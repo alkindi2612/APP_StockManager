@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".InventoryActivity">
+
+    <TextView
+        android:id="@+id/textViewInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Persediaan Barang"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewInventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewInventory"
+        android:layout_marginTop="8dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewSales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listViewInventory"
+        android:layout_marginTop="16dp"
+        android:text="Penjualan Barang"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewSales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSales"
+        android:layout_marginTop="8dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:paddingTop="8dp" />
+
+</RelativeLayout>
